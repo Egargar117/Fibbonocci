@@ -1,0 +1,19 @@
+N1 = float(input("Enter the first two digits of the sequence "))
+if N1 < 0:
+    print("must be greater than 0")
+    exit()
+N2 = float(input(""))
+if N2 < 0:
+    print("must be greater than 0")
+    exit()
+maxnum = float(input("Enter max int "))
+seq = []
+seq.append(N1)
+seq.append(N2)
+N = 0
+while N < maxnum:
+    N = N1 + N2
+    seq.append(N)
+    N1 = N2
+    N2 = N
+print(seq)
